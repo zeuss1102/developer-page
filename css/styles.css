@@ -24,3 +24,37 @@ body {
 .navegacion-principal {
     background-color: var(--secundario);
 }
+.contenedor {
+    width: 120rem ;
+    /* una manera de poner los margentes de 4 maneras 
+    margin-top: ;
+    margin-bottom: ;
+    margin-left: ;
+    margin-right: ;
+
+    margin: 0 auto 0 auto; tomando las posiciones de un reloj
+    */
+    margin: 0 auto; /*el primer valo corresponde a top-bottom y el segundo valo corresponde a right-left */
+
+}
+.nav-bg {
+    background-color: var(--secundario);
+}
+.navegacion-principal a {
+    background-color: var(--primario) ;
+    color: white;
+    text-decoration: none;
+}
+/*
+p {
+    background-color: #ffc107;
+}
+*/
+/*.navegacion-principal a {
+    display: block;
+}
+*/
+.navegacion-principal {
+    padding: 1rem;
+    
+}
