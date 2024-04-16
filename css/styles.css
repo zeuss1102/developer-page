@@ -40,11 +40,7 @@ body {
 .nav-bg {
     background-color: var(--secundario);
 }
-.navegacion-principal a {
-    background-color: var(--primario) ;
-    color: white;
-    text-decoration: none;
-}
+
 /*
 p {
     background-color: #ffc107;
@@ -55,6 +51,22 @@ p {
 }
 */
 .navegacion-principal {
+    display: flex;
+    /*justify content es para filas 
+    aling-items es para columnas (flex-direction)*/
+    justify-content: space-between;
+    font-size: 2rem;
+    /* para poner negritas*/
+    font-weight: bold;
+
+}
+.navegacion-principal a {
     padding: 1rem;
-    
+    color: white;
+    text-decoration: none;
+}
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+
 }
