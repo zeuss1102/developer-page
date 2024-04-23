@@ -70,3 +70,22 @@ p {
     color: var(--oscuro);
 
 }
+/* tamaños recomenados para media query
+480px para moviles 
+768 para tablets
+1140px para laptops
+1400px para dispositivos más grandes o TV's 
+*/
+body {
+    background-color: beige;
+}
+@media (min-width: 480px) {
+    body {
+        background-color: blue;
+    }
+}
+@media (min-width: 768px) {
+    body {
+        background-color: cornflowerblue;
+    }
+}
