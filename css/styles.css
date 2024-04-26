@@ -8,24 +8,40 @@
 
 html {
     font-size: 62.5%;
+    /*hack para box model*/
+    box-sizing: border-box;
+}
+  /*hack para box model*/
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
     font-size: 16px;
 }
-.titulo {
-    text-align: center;
+/*Tipográfia*/
+h1{
     font-size: 3.8rem;
 }
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h1,h2,h3{
+    text-align: center;
+}
+ /*
 .titulo span {
     font-size: 2rem;
     color: yellow;
-}
+} */
 .navegacion-principal {
     background-color: var(--secundario);
 }
 .contenedor {
-    width: 120rem ;
+    max-width: 120rem ;
     /* una manera de poner los margentes de 4 maneras 
     margin-top: ;
     margin-bottom: ;
@@ -52,13 +68,20 @@ p {
 */
 .navegacion-principal {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     /*justify content es para filas 
     aling-items es para columnas (flex-direction)*/
     justify-content: space-between;
     font-size: 2rem;
     /* para poner negritas*/
     font-weight: bold;
-
+}
+@media (min-width: 768px) {
+  .navegacion-principal {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .navegacion-principal a {
     padding: 1rem;
@@ -76,16 +99,48 @@ p {
 1140px para laptops
 1400px para dispositivos más grandes o TV's 
 */
-body {
-    background-color: beige;
+.hero {
+    background-image: url(../image/MicrosoftTeams-image\ \(1\).png);
+    /* ../ es para regresar un nivel del direcctorio,
+    la carpeta img está afuera del STYLES */
+    background-repeat: no-repeat;
+    /*en imagenes pequeñas suelen repertirse y abarcar el espacio de la página */
+    background-size: cover;
+    /* sirve para cubrir la imagen con todo el tamaño */
+    height: 450px; /* alto elemento hero */
+    position: relative; /* para manipular la posicion, el padre siempre debe ser relative*/
+
 }
-@media (min-width: 480px) {
-    body {
-        background-color: blue;
-    }
+.contenedor-hero {
+    position: absolute; /* para manipular la posicion, el hijo debe ser absoluto*/
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    /* alinear vertical y horizontalmente*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-@media (min-width: 768px) {
-    body {
-        background-color: cornflowerblue;
-    }
+
+.contenedor-hero p, .contenedor-hero h2 {
+    color: var(--blanco);
 }
+.ubicacion {
+    display: flex;
+    align-items: flex-end;
+
+}
+.boton {
+    background-color: var(--secundario); /*color de fondo del boton*/
+    color: var(--blanco); /*color de texto*/
+    padding: 1rem 3rem;
+    margin-top: 3rem; /*separación superior*/
+    font-size: 2rem;
+    text-decoration: none; /*quitar el subrayado*/
+    text-transform: uppercase; /*poner en mayusculas*/
+    font-weight: bold; /*poner texto en negritas*/
+    border-radius: 5rem; /*esquinas redondeadas*/
+    width: 90%; /*ancho del boton*/
+    text-align: center; /*centrar el texto del boton*/
+}   
