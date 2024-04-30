@@ -18,6 +18,7 @@ html {
 
 body {
     font-size: 16px;
+    background-image: linear-gradient(to top, var(--gris) 0%, var(--blanco) 100%);
 }
 /*Tipográfia*/
 h1{
@@ -140,7 +141,21 @@ p {
     text-decoration: none; /*quitar el subrayado*/
     text-transform: uppercase; /*poner en mayusculas*/
     font-weight: bold; /*poner texto en negritas*/
-    border-radius: 5rem; /*esquinas redondeadas*/
+    border-radius: 2rem; /*esquinas redondeadas*/
     width: 90%; /*ancho del boton*/
     text-align: center; /*centrar el texto del boton*/
-}   
+}
+@media (min-width: 768px) {
+    .boton {
+      width: auto;
+    }
+  }
+  .sombra {
+    margin-top: 1rem;
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.75);
+-webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.75);
+-moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.75);
+background-color: var(--blanco);
+padding: 2rem;
+border-radius: 1rem;
+  }
