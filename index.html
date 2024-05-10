@@ -107,38 +107,41 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit impedit aliquam voluptate fuga vitae expedita? Molestias perferendis dolorem dicta autem fuga rem tempora quibusdam, ipsa a vero fugiat, quaerat eligendi!</p>
     </section>
 </div> 
- </main>
+
 
     <section>
         <h2>Contacto</h2>
-        <form>
+        <form class="formulario">
             <fieldset>
-                <legend>contactanos llenando toso los campos</legend>
-                <div>
+                <legend>contactanos llenando todos los campos</legend>
+                <div class="contenedor-campos">
+                <div class="campo">
                     <label>Nombre</label>
-                    <input type="text" placeholder="tu nombre">
-                </div>
-                <div>
-                    <label>telefono</label>
-                    <input type="tel" placeholder="Tu Telefono">
+                    <input class="input-text" type="text" placeholder="tu nombre">
+                </div >
+                <div  class="campo">
+                    <label>teléfono</label>
+                    <input class="input-text" type="tel" placeholder="Tu Telefono">
                 </div>
 
-                <div>
+                <div class="campo">
                     <label>correo</label>
-                    <input type="email" placeholder="Tu email">
+                    <input class="input-text" type="email" placeholder="Tu email">
                 </div>
-                <div>
+                <div class="campo">
                     <label>Mensaje</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea class="input-text" name="" id="" cols="30" rows="10"></textarea>
                 </div>
-                <div>
-                    <input type="submit" value="Enviar">
+            </div>
+                <!--contendor campos-->
+                <div class="alinear-derecha flex">
+                    <input class="boton" w-sm-100 type="submit" value="Enviar">
                 </div>
             </fieldset>
         </form>
     </section>
-
-     <footer>
+</main>
+     <footer class="footer">
         <p>Todos los derechos reservados ©, EMILIO PUIGCERVER TRACONIS </p>
      </footer>
     
