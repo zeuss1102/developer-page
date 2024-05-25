@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Formulario de Contacto</h1>
+      <h1>Contacto</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="nombre">Nombre:</label>
