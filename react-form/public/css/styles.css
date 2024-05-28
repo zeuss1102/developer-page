@@ -53,8 +53,9 @@ h1,h2,h3{
 .flex{
     display: flex;
 }
-.alinear-derecha{
+.ali-derecha{
     justify-content: flex-end;
+    padding-top: 1rem;
 }
 
 .navegacion-principal {
