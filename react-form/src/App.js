@@ -33,8 +33,8 @@ function App() {
       from_phone: telefono,
       message: mensaje,
     };
-
-    emailjs.send('service_7ocan4l', 'template_3i4o1mz', templateParams, 'YOUR_USER_ID')
+  //funcio para enviar correo email
+    emailjs.send('service_7ocan4l', 'template_3i4o1mz', templateParams, 'ytEsd7wTzeKuEU30w')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         alert('Correo enviado exitosamente');
